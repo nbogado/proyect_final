@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+        'miHeader'
+        'miMain'
+        'miFooter';
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: #c0b3a1;
+    color: white;
+    height: auto;
+}
+
+header h1 {
+    margin: 15px;
+}
+
+header nav {
+    margin: 10px;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+nav ul li a:active {
+    color: #a97171;
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    background-color: #c0b3a1;
+}
+
+.ancho_footer {
+    padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+            'miHeader miHeader'
+            'miMain miMain'
+            'miFooter miFooter';
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        grid-area: miHeader;
+        background-color: #c0b3a1;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    header nav {
+        margin-right: 100px;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        list-style-type: none;
+        margin: 25px 15px;
+    }
+
+    header nav ul li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        color: #a97171;
+    }
+
+    main {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    h2  {
+        color: #b48eb0;
+        font-size: 35px;
+    }
+
+    footer {
+        grid-area: miFooter;
+        background-color: #c0b3a1;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Principio del footer */
+    footer {
+        width: 100%;
+        height: 100%;
+        background: #c0b3a1;
+    }
+
+    footer .ancho_footer{
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        padding-top: 50px;
+        display: flex;
+    }
+
+
+    /*Formulario de Novedades */
+    .form_novedades {
+        width: 100%;
+        height: 200px;
+        background: #efecf0;
+        float: left;
+        border-radius: 5px;
+        position: relative;
+        margin-right: 80px;
+    }
+
+    footer div div form {
+        width: 90%;
+        height: 80px;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    form label {
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    input[name="correo"] {
+        border: solid 2px #dcd4cd;
+        width: 190px;
+        height: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    input[name="enviar_suscripcion"] {
+        background: #dcd4cd;
+        border: none;
+        padding: 5px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    input[name="enviar_suscripcion"]:hover {
+        background-color: #a97171;
+        color: white;
+    }
+    /*Fin formulario de Novedades */
+
+    /*Menu footer */
+    .ancho_menu {
+        position: relative;
+        margin-right: 50px;
+    }
+
+    .menu_footer {
+        text-align: center;
+        list-style: none;
+        width: 200%;
+        height: 200px;
+    }
+
+    .titulo_menu {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #a97171;
+    }
+
+    .menu_footer li {
+        text-align: left;
+
+    }
+
+    .menu_footer li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu_footer li a:hover {
+        color: #a97171;
+    }
+    /*Fin menu footer */
+
+
+    /*Redes section footer */
+    .redes {
+        float: right; 
+        width: 60%;
+        height: 200px;
+        position: relative;
+        margin-left: 100px;
+    }
+
+    h4 {
+        text-align: left;
+        color: white;
+        padding-bottom: 10px;;
+    }
+
+    .iconos_redes button i {
+        color: white;
+    }
+
+    .iconos_redes button i:hover {
+        color: #a97171;
+    }
+
+    .iconos_redes button {
+        border: none;
+        background: none;
+    }
+
+    .logo_footer {
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 20px;
+    }
+
+    .logo_footer img {
+        width: 100px;
+        height: 100px;
+    }
+    /*Fin redes section footer */
+    /*Fin del footer*/
+}
+
+
+
+
+
