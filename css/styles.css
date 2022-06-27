@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Paleta de Colores
-.color1 {color: #a97171;}
+
+/* .color1 {color: #a97171;}
 .color2 {color: #b28d7c;}
 .color3 {color: #c0b3a1;}
 .color4 {color: #d6d6d0;}
@@ -11,8 +11,8 @@
 .color2 {color: #c999a4;}
 .color3 {color: #d4b7b0;}
 .color4 {color: #dcd4cd;}
-.color5 {color: #e3e2e1;}
-*/
+.color5 {color: #e3e2e1;} */
+
 
 
 * {
@@ -56,6 +56,11 @@ nav li a:hover {
     margin-top: 70px;
 }
 
+h2 {
+    color: #b48eb0;
+    font-weight: bold;
+}
+
 
 .card-text {
     color: white;
@@ -94,10 +99,6 @@ footer {
 
 label[for="InputEmailNovedades"] {
     font-weight: bold;
-}
-
-input[id="InputEmail1"] {
-    width: 50%;
 }
 
 img[src="img/logo.PNG"] {
