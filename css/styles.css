@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-/* .color1 {color: #a97171;}
+ /* .color1 {color: #a97171;}
 .color2 {color: #b28d7c;}
 .color3 {color: #c0b3a1;}
 .color4 {color: #d6d6d0;}
@@ -11,7 +11,7 @@
 .color2 {color: #c999a4;}
 .color3 {color: #d4b7b0;}
 .color4 {color: #dcd4cd;}
-.color5 {color: #e3e2e1;} */
+.color5 {color: #e3e2e1;}  */
 
 
 
@@ -63,7 +63,8 @@ h2 {
 
 
 #main_donaciones {
-    margin: 50px 50px;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .card-text {
@@ -135,4 +136,41 @@ img[alt="Logo de Hogar de Patis footer"] {
     border: none;
 }
 
+#lista_requisitos_tansitos li{
+    list-style-type: none;
+}
 
+#sectionTransitos h4{
+    margin-left: 2em;
+    font-weight: bold;
+}
+
+#lista_requisitos_tansitos{
+    margin-left: 3em;
+}
+
+h3 {
+    color: #a97171;
+}
+
+#paw_logo {
+    animation: rotatePaw 0.4s infinite linear alternate;
+}
+
+@keyframes rotatePaw {
+    0% {
+      transform:rotate(-20deg);
+    }
+    25% {
+       transform:rotate(-10deg);
+    }
+    50% {
+       transform:rotate(0deg);
+    }
+    75% {
+       transform:rotate(10deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
+  }
