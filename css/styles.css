@@ -11,7 +11,7 @@
 .color2 {color: #c999a4;}
 .color3 {color: #d4b7b0;}
 .color4 {color: #dcd4cd;}
-.color5 {color: #e3e2e1;}  */
+.color5 {color: #e3e2e1;} */
 
 
 
@@ -62,9 +62,13 @@ h2 {
 }
 
 
-#main_donaciones {
+main {
     margin-top: 3em;
     margin-bottom: 3em;
+}
+
+#main_index {
+    margin-top: 0px;
 }
 
 .card-text {
@@ -173,4 +177,20 @@ h3 {
     100% {
       transform: rotate(20deg);
     }
+  }
+
+hr {
+    border: #b48eb0 2px solid;
+    border-radius: 40px;
+  }
+
+#imagen_perro_form_contacto {
+    width: 15em;
+  }
+
+input[type="submit"], input[type="reset"] {
+    background-color: #a97171;
+    color: white;
+    border: #c0b3a1 2px solid;
+    padding: 0.4em;
   }
