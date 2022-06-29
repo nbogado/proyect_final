@@ -49,33 +49,41 @@
                         interesado.</p>
                 </div>
                 <div class="col-lg-6 text-lg-left">
-                    <form action="formulario_de_contacto.php" method="post">
-                        <label for="nombre_y_apellido">Nombre y Apellido (requerido)</label><br>
-                        <input type="text" name="nombre_y_apellido" placeholder="Escribe tu nombre"><br>
-
-                        <label for="email">E-mail (requirido)</label><br>
-                        <input type="text" name="email" placeholder="Escribe tu E-mail"><br>
-
-                        <label for="telefono">Teléfono</label><br>
-                        <input type="text" name="telefono" placeholder="Escribe tu teléfono"><br>
-
-                        <label for="asunto">Área de contacto</label><br>
-                        <select name="asunto" id="asunto">
-                            <option value="Adopciones">Adopciones</option>
-                            <option value="Donaciones">Donaciones</option>
-                            <option value="Voluntarios">Voluntarios</option>
-                            <option value="Otros">Otros</option>
-                        </select><br>
-
-                        <label for="mensaje">Mensaje</label><br>
-                        <textarea name="mensaje" placeholder="Deja aquí tu mensaje..."></textarea><br>
-
-                        <input type="submit" name="enviar_formulario" value="Enviar Consulta">
-                        <input type="reset" value="Limpiar formulario">
+                    <form>
+                        <div class="form-group" action="formulario_de_contacto.php" method="post">
+                            <label for="nombre_y_apellido">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="InputNombreApellido"
+                                aria-describedby="emailHelp" name="nombre_y_apellido"
+                                placeholder="Escribe tu nombre y apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="InputEmail" name="email"
+                                placeholder="Escribe tu E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" class="form-control" name="telefono" placeholder="Escribe tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="area">Area</label>
+                            <select name="area" id="area">
+                                <option value="Adopciones">Adopciones</option>
+                                <option value="Donaciones">Donaciones</option>
+                                <option value="Voluntarios">Voluntarios</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="form-control" name="mensaje" placeholder="Deja aquí tu mensaje..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
                 <div class="col-lg-6 text-lg-right">
-                    <img id="imagen_perro_form_contacto" class="imagen_contacto_form" src="../img/contacto.jpg" alt="Imagen de perro feliz">
+                    <img id="imagen_perro_form_contacto" class="imagen_contacto_form" src="../img/contacto.jpg"
+                        alt="Imagen de perro feliz">
                 </div>
             </div>
         </div>
