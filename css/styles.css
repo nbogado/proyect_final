@@ -162,6 +162,9 @@ footer {
 }
 
 
+.one-place {
+    margin-top: 3em;
+}
 
 
 
@@ -291,5 +294,6 @@ footer {
     
     .one-place {
         max-width: 25%;
+        margin: auto;
     }
 }
