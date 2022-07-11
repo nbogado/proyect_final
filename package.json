@@ -1,0 +1,17 @@
+{
+  "name": "CoderHouse - diseñoweb hogar de patis",
+  "version": "1.0.0",
+  "description": "Proyecto Final Diseño Web Coder House",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/styles.scss assets/css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Noelia Bogado",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,199 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+/* .color1 {color: #a97171;}
+.color2 {color: #b28d7c;}
+.color3 {color: #c0b3a1;}
+.color4 {color: #d6d6d0;}
+.color5 {color: #efecf0;}
+
+.color1 {color: #b48eb0;}
+.color2 {color: #c999a4;}
+.color3 {color: #d4b7b0;}
+.color4 {color: #dcd4cd;}
+.color5 {color: #e3e2e1;} */
+/* Mobile First */
+@keyframes "rotatePaw" {
+  0% {
+    transform: rotate(-20deg); }
+  25% {
+    transform: rotate(-10deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(20deg); } }
+
+/* header div .row {
+        height: 5em;
+    } */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  background-color: #c0b3a1;
+  color: white; }
+
+#paw_logo {
+  animation: rotatePaw 0.4s infinite linear alternate; }
+
+nav ul li {
+  list-style-type: none; }
+  nav ul li a {
+    color: white;
+    font-weight: bold; }
+
+.fa-bars {
+  color: white;
+  border: white 1px solid;
+  border-radius: 4px;
+  padding: 5px; }
+
+main {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+
+#main_index {
+  margin-top: 0px; }
+
+h1 {
+  font-size: 23px; }
+
+h2 {
+  color: #b48eb0;
+  font-weight: bold; }
+
+h3 {
+  color: #a97171; }
+
+#sectionSalvarVidas h2 {
+  margin-top: 20px; }
+
+.card {
+  border: none; }
+
+.card-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1em; }
+
+#lista_requisitos_tansitos li {
+  list-style-type: none; }
+
+footer {
+  background-color: #c0b3a1;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+#footer-form-novedades {
+  background-color: white;
+  color: #a97171;
+  border-radius: 5px;
+  width: 20em;
+  padding: 2em; }
+
+#contenedor_form button[type="submit"] {
+  background-color: #a97171;
+  color: white;
+  border: none; }
+
+.menu_footer li {
+  list-style-type: none; }
+  .menu_footer li a {
+    color: white;
+    text-decoration: none; }
+
+.footer-social li {
+  list-style-type: none;
+  display: inline; }
+  .footer-social li a {
+    color: white;
+    text-decoration: none; }
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.copyright {
+  font-size: 70%; }
+
+.one-place {
+  margin-top: 3em; }
+
+@media (min-width: 992px) {
+  h1 {
+    display: inline; }
+  nav ul {
+    display: inline-block; }
+    nav ul li {
+      display: inline-block;
+      list-style-type: none; }
+      nav ul li a {
+        color: white;
+        font-weight: bold; }
+  nav li a:hover {
+    color: #a97171; }
+  #sectionSalvarVidas h2 {
+    margin-top: 70px; }
+  .card-text {
+    font-size: 2em; }
+  .menu_footer {
+    margin-top: 20px; }
+    .menu_footer li a:hover {
+      color: #a97171;
+      text-decoration: none; }
+  img[alt="Logo de Hogar de Patis footer"] {
+    margin-top: 1em;
+    width: 5em; } }
+
+.iconos_redes button {
+  border: none;
+  background: none;
+  color: white; }
+
+#form_novedades_footer {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+#lista_requisitos_tansitos {
+  margin-left: 3em; }
+  #lista_requisitos_tansitos li {
+    list-style-type: none; }
+
+#sectionTransitos h4 {
+  margin-left: 2em;
+  font-weight: bold; }
+
+h3 {
+  color: #a97171; }
+
+hr {
+  border: #b48eb0 2px solid;
+  border-radius: 40px; }
+
+#imagen_perro_form_contacto {
+  width: 15em; }
+
+input[type="submit"] {
+  background-color: #a97171;
+  color: white;
+  border: #c0b3a1 2px solid;
+  padding: 0.4em; }
+
+input[type="reset"] {
+  background-color: #a97171;
+  color: white;
+  border: #c0b3a1 2px solid;
+  padding: 0.4em; }
+
+.container-footer {
+  flex-direction: row;
+  justify-content: space-around; }
+
+.one-place {
+  max-width: 25%;
+  margin: auto; }
