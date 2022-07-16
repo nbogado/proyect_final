@@ -1,11 +1,11 @@
 {
-  "author": "Nombre e Email",
+  "author": "Noelia Bogado",
   "description": "Descripcion de mi Package",
   "license": "MIT",
   "name": "nombre-de-mi-package",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed assets/scss/estilos.scss assets/css/main.css"
+    "build:css": "node-sass --output-style compressed scss/estilos.scss css/styles.css"
   },
   "version": "1.0.0",
   "devDependencies": {
