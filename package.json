@@ -1,8 +1,8 @@
 {
   "author": "Noelia Bogado",
-  "description": "Descripcion de mi Package",
+  "description": "Web hogar de patis",
   "license": "MIT",
-  "name": "nombre-de-mi-package",
+  "name": "hogar-de-patis",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "build:css": "node-sass --output-style compressed scss/estilos.scss css/styles.css"
