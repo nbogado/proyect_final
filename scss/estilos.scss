@@ -180,6 +180,20 @@ footer {
     margin-top: 3em;
 }
 
+$redes-sociales: (
+    twitter: #51aff8,
+	facebook: #2956a3,
+	youtube: #ce1312,
+	instagram: #870cf2,
+);
+
+@each $red, $color in $redes-sociales {
+    .red--#{$red} {
+        &:hover {
+            color: $color;
+        }
+    }
+}
 
 
 @media (min-width:992px) {
