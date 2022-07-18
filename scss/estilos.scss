@@ -8,6 +8,18 @@ $background-color_1: #c0b3a1;
 $background-color_2: white;
 $background-color_3: #a97171;
 
+@mixin formato-mobile-a {
+    color: $color_1;
+    text-decoration: none;
+}
+
+@mixin formato-input-contacto {
+    background-color: $background-color_1;
+    color: $color_1;
+    border: #c0b3a1 2px solid;
+    padding: 0.4em;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -137,8 +149,7 @@ footer {
         list-style-type: none;
 
         a {
-            color: $color_1;
-            text-decoration: none;
+            @include formato-mobile-a;
         }
     }
 }
@@ -149,8 +160,7 @@ footer {
         display: inline;
 
         a {
-            color: $color_1;
-            text-decoration: none;
+            @include formato-mobile-a;
         }
     }
 }
@@ -169,64 +179,6 @@ footer {
 .one-place {
     margin-top: 3em;
 }
-
-
-
-
-@media (min-width:992px) {
-
-    h1 {
-        display: inline;
-    }
-
-    nav {
-        ul {
-            display: inline-block;
-
-            li {
-                display: inline-block;
-                list-style-type: none;
-
-                a {
-                    color: $color_1;
-                    font-weight: bold;
-                }
-            }
-        }
-
-        li {
-            a {
-                &:hover {
-                    color: $color_2;
-                }
-            }
-        }
-    }
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -330,17 +282,11 @@ footer {
     }
 
     input[type="submit"] {
-        background-color: $background-color_1;
-        color: $color_1;
-        border: #c0b3a1 2px solid;
-        padding: 0.4em;
+        @include formato-input-contacto;
     }
 
     input[type="reset"] {
-        background-color: $background-color_1;
-        color: $color_1;
-        border: #c0b3a1 2px solid;
-        padding: 0.4em;
+        @include formato-input-contacto;
     }
 
     .container-footer {
